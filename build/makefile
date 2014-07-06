@@ -28,6 +28,7 @@ all: c-make
 
 # Tool invocations
 c-make: $(OBJS) $(USER_OBJS)
+	sleep 2
 	@echo 'Building target: $@'
 	@echo 'Invoking: GCC C Linker'
 	gcc  -o "c-make" $(OBJS) $(USER_OBJS) $(LIBS)
